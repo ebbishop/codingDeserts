@@ -11,6 +11,7 @@ var data = {
     {name: "Academy for Software Engineering",
     type: "Public school",
     borough: "Manhattan",
+    grades: "High school",
     address: "40 Irving Place",
     city: "New York",
     state: "NY",
@@ -19,8 +20,22 @@ var data = {
     website: "http://schools.nyc.gov/SchoolPortals/02/M546/default.htm",
     location: [40.7353240, -73.9870810],
     annualTuition: 0,
-    grades: 'Elementary',
-    singleSex: false }
+    singleSex: false },
+
+    {
+      name: "Bronx Academy for Software Engineering",
+      type: "Public school",
+      borough: "Bronx",
+      grades: "High school",
+      address: "2474 Crotona Ave",
+      city: "Bronx",
+      zip: 10458,
+      phone:"718-733-6024",
+      website: "http://bronxsoftware.org/",
+      location: [40.85523,-73.88245],
+      annualTuition: 0,
+      singleSex: false
+    }
   ]
 };
 
