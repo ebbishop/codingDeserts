@@ -5,7 +5,7 @@
  */
 
 body {
-    background-color: #f8f8f8;
+    background-color: white;
 }
 
 #wrapper {
@@ -351,4 +351,8 @@ table.dataTable thead .sorting:after {
 
 .panel-yellow a:hover {
     color: #df8a13;
+}
+
+.panel-search {
+    margin-top: 10px;
 }
