@@ -87,4 +87,8 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  /*
+  zheng: log a message to the terminal
+  */
+  console.log("I am listening to:", port); 
 }
