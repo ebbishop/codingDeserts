@@ -29,7 +29,7 @@ var data = {
       grades: "High school",
       address: "2474 Crotona Ave",
       city: "Bronx",
-      state: "NY"
+      state: "NY",
       zip: 10458,
       phone:"718-733-6024",
       website: "http://bronxsoftware.org/",
