@@ -26,7 +26,7 @@ var data = {
       name: "Bronx Academy for Software Engineering",
       type: "Public school",
       borough: "Bronx",
-      grades: "High school"
+      grades: "High school",
       address: "2474 Crotona Ave",
       city: "Bronx",
       zip: 10458,
