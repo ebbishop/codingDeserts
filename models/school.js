@@ -12,6 +12,7 @@ var SchoolSchema = new mongoose.Schema({
   website: String,
   location: [Number],
   annualTuition: Number,
+  grades: String,
   singleSex: Boolean
 })
 

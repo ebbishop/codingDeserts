@@ -19,6 +19,7 @@ var data = {
     website: "http://schools.nyc.gov/SchoolPortals/02/M546/default.htm",
     location: [40.7353240, -73.9870810],
     annualTuition: 0,
+    grades: 'Elementary',
     singleSex: false }
   ]
 };
