@@ -1,6 +1,7 @@
 var map;
 
 function initialize_gmaps(){
+  // console.log("I am in google maps maps.js")
   var initLatLng = new google.maps.LatLng(40.79093941,-73.90777588);
 
   //set up map options
@@ -20,6 +21,7 @@ function initialize_gmaps(){
 
 }
   function drawLocation(location, opts){
+    // console.log("drawing location!",location)
     if(typeof opts !== 'object'){
       opts = {};
     }
@@ -40,7 +42,9 @@ function getAllSchools (){
     method: 'GET',
     url: '/api/schools',
     success: function(schoolsData){
+      // console.log("i got the school data",schoolsData) 
       schoolsData.forEach(function(school){
+        // console.log("school location",school.location)
         drawLocation(school.location)
       })
     },

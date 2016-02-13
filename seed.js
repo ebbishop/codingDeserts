@@ -67,8 +67,8 @@ var data = {
       website: "http://www.hstat.org/",
       location: [40.63685,-74.02318],
       annualTuition: 0,
-      singleSex: FALSE,
-      verified: FALSE
+      singleSex: false,
+      verified: false
     },
     {
       name: "J.H.S. 062 Ditmas",
@@ -83,8 +83,8 @@ var data = {
       website:  "http://ditmasis62.webs.com/",
       location: [40.63857,-73.97124],
       annualTuition:  0,
-      singleSex: FALSE,
-      verified: FALSE
+      singleSex: false,
+      verified: false
     },
     {
       name: "Saint Saviour High School",
@@ -116,8 +116,8 @@ var data = {
       website:  "http://aspirationshs.com/",
       location: [40.67757,-73.90406],
       tuition:  0,
-      singleSex: FALSE,
-      verified: FALSE
+      singleSex: false,
+      verified: false
 
     },
 
@@ -134,8 +134,8 @@ var data = {
       website: "http://www.aoiths.org",
       location: [40.69301,-73.86907],
       tuition:  0,
-      singleSex: FALSE,
-      verified: FALSE
+      singleSex: false,
+      verified: false
     },
 
     {
@@ -151,8 +151,8 @@ var data = {
       website: "http://halsey157.org/",
       location: [40.73229,-73.85305],
       tuition: 0,
-      singleSex: FALSE,
-      verified: FALSE
+      singleSex: false,
+      verified: false
 
     },
 
@@ -169,8 +169,8 @@ var data = {
       website: "http://schools.nyc.gov/SchoolPortals/02/M546/default.htm",
       location: [40.7353240,-73.9870810],
       tuition: 0,
-      singleSex: FALSE,
-      verified: FALSE
+      singleSex: false,
+      verified: false
 
     },
     {
@@ -186,8 +186,8 @@ var data = {
       website: "http://www.ms74.com/",
       location: [40.74508,-73.76688],
       tuition: 0,
-      singleSex: FALSE,
-      verified: FALSE
+      singleSex: false,
+      verified: false
     },
     {
       name: "Bayside High School",
@@ -202,8 +202,8 @@ var data = {
       website: "http://www.baysidehighschool.org/",
       location: [40.77110,-73.78021],
       tuition: 0,
-      singleSex: FALSE,
-      verified: FALSE
+      singleSex: false,
+      verified: false
     },
     {
       name: "Bronx Compass High School",
@@ -218,8 +218,8 @@ var data = {
       website: "http://www.bronxcompass.org",
       location: [40.82145,-73.85565],
       tuition: 0,
-      singleSex: FALSE,
-      verified: FALSE
+      singleSex: false,
+      verified: false
     },
     {
       name: "Eagle Academy For Young Men",
@@ -234,8 +234,8 @@ var data = {
       website: "http://www.eaglebronx.org/",
       location: [40.84532,-73.89739],
       tuition: 0,
-      singleSex: FALSE,
-      verified: FALSE
+      singleSex: false,
+      verified: false
     },
     {
       name: "Bronx Academy for Software Engineering",
@@ -250,8 +250,8 @@ var data = {
       website: "http://bronxsoftware.org/",
       location: [40.85523,-73.88245],
       tuition: 0,
-      singleSex: FALSE,
-      verified: FALSE
+      singleSex: false,
+      verified: false
     },
     {
       name: "Bronx Park Middle School",
@@ -266,8 +266,8 @@ var data = {
       website: "http://www.bronxparkms.info/",
       location: [40.86206,-73.86459],
       tuition: 0,
-      singleSex: FALSE,
-      verified: FALSE
+      singleSex: false,
+      verified: false
     }
   ]
 };
