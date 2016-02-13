@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Coding Deserts</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../public/sbs/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <!-- <link href="../../public/sbs/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet"> -->
+
+    <!-- Timeline CSS -->
+    <link href="../../public/sbs/dist/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../public/sbs/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../../public/sbs/bower_components/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../public/sbs/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand glyphicon glyphicon-hdd" href="index.html"> Coding Deserts</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Submit Your Program</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">About</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login</a>
+                </li>
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search by Zip Code">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-photo fa-fw"></i> Views<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="flot.html" class="fa fa-map-marker">       Map View</a>
+                                </li>
+                                <li>
+                                    <a href="morris.html" class="fa fa-th-list">   List View</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="tables.html"><i class="fa fa-save fa-fw"></i> Saved Programs</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        </div>
+
+        <div id="page-wrapper">
+            <div class="panel panel-default panel-search">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-lg-4">
+                            <div class="form-group borough">
+                                <label>Borough</label><br>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">Manhattan
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">Brooklyn
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">Queens
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">Bronx
+                                </label><br>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">Staten Island
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">    
+                            <div class="form-group grades-served">
+                                <label>Grade</label><br>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">Elementary School
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">Middle School
+                                </label><br>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">High School
+                                </label>
+                            </div> 
+                        </div>
+                        <div class="col-lg-4"> 
+                            <div class="form-group">
+                                <label>Maximum Price</label>
+                                <select class="form-control">
+                                    <option>any</option>
+                                    <option>$100</option>
+                                    <option>$500</option>
+                                    <option>$1,000</option>
+                                    <option>$5,000</option>
+                                    <option>$10,000</option>
+                                </select>
+                            </div>
+                        </div>                   
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+            </div>    
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="panel panel-default">
+                        <!-- /.panel-heading -->
+                        <div class="panel-heading">
+                            <i class="fa fa-map-marker fa-fw"></i>
+                        </div>
+                        <div class="panel-body">
+                            <div id="map"> ENTER MAP HERE </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    
+                </div>
+                <!-- /.col-lg-8 -->
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bell fa-fw"></i> Schools
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-laptop fa-fw"></i> School 1
+                                    <span class="pull-right text-muted small"><em>More Info</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-laptop fa-fw"></i> School 2
+                                    <span class="pull-right text-muted small"><em>More Info</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-laptop fa-fw"></i> School 3
+                                    <span class="pull-right text-muted small"><em>More Info</em>
+                                    </span>
+                                </a>
+                               <a href="#" class="list-group-item">
+                                    <i class="fa fa-laptop fa-fw"></i> School 4
+                                    <span class="pull-right text-muted small"><em>More Info</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-laptop fa-fw"></i> School 5
+                                    <span class="pull-right text-muted small"><em>More Info</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-laptop fa-fw"></i> School 6
+                                    <span class="pull-right text-muted small"><em>More Info</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-laptop fa-fw"></i> School 7
+                                    <span class="pull-right text-muted small"><em>More Info</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-laptop fa-fw"></i> School 8
+                                    <span class="pull-right text-muted small"><em>More Info</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-laptop fa-fw"></i> School 9
+                                    <span class="pull-right text-muted small"><em>More Info</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-laptop fa-fw"></i> School 10
+                                    <span class="pull-right text-muted small"><em>More Info</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- /.list-group -->
+                            <a href="#" class="btn btn-default btn-block">View All</a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src=".../../public/sbs/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../public/sbs/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../../public/sbs/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../../public/sbs/bower_components/raphael/raphael-min.js"></script>
+    <script src="../../public/sbs/bower_components/morrisjs/morris.min.js"></script>
+    <script src="../../public/sbs/js/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
