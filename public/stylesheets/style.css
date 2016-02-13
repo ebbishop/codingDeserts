@@ -9,6 +9,7 @@ body {
   border-right: 2px solid #b1a398; }
 
 .navbar {
+  background: white;
   border-color: #564a41; }
 
 #map-canvas {
@@ -64,3 +65,10 @@ h3 {
 #zipcode {
   max-width: 200px;
 }
+
+#search {
+  float: left;
+}
+
+
+
