@@ -356,3 +356,6 @@ table.dataTable thead .sorting:after {
 .panel-search {
     margin-top: 10px;
 }
+.map-container {
+    height: 300px;
+}
