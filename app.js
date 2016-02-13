@@ -22,8 +22,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+/* 
+zheng: add static route to browser 
+*/ 
+app.use(express.static(path.join(__dirname, 'browser')));
+app.use(express.static(path.join(__dirname, 'node_module')));
+
+
 app.use('/', routes);
 app.use('/users', users);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
