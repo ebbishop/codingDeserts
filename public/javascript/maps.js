@@ -16,7 +16,26 @@ function initialize_gmaps(){
 //create the map
   map = new google.maps.Map(map_canvas, mapOptions);
 
-// get request for all schools
+    // marker.setMap(map);
+
+}
+  function drawLocation(location, opts){
+    if(typeof opts !== 'object'){
+      opts = {};
+    }
+    opts.position = new google.maps.LatLng(location[0], location[1])
+    opts.map = map;
+    var marker = new google.maps.Marker(opts);
+  }
+
+
+$(document).ready(function(){
+  // get request for all schools
+  initialize_gmaps();
+  getAllSchools();
+})
+
+function getAllSchools (){
   $.ajax({
     method: 'GET',
     url: '/api/schools',
@@ -27,18 +46,17 @@ function initialize_gmaps(){
     },
     error: console.error
   })
-
-  function drawLocation(location, opts){
-    if(typeof opts !== 'object'){
-      opts = {};
-    }
-    opts.position = new google.maps.LatLng(location[0], location[1])
-    opts.map = map;
-    var marker = new google.maps.Marker(opts);
-  }
-    // marker.setMap(map);
-
 }
-$(document).ready(function(){
-  initialize_gmaps();
-})
+
+function getSchoolsByBorough(borough){
+  $.ajax({
+    method: 'GET',
+    url: '/api/schools/borough',
+    success: function(schoolsData){
+      schoolsData.forEach(function(school){
+        drawLocation(school.location)
+      })
+    },
+    error: console.error
+  })
+}
