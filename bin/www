@@ -90,5 +90,5 @@ function onListening() {
   /*
   zheng: log a message to the terminal
   */
-  console.log("I am listening to:", port); 
+  console.log("I am listening to:", addr.address + '/'+ port); 
 }
