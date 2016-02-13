@@ -12,7 +12,7 @@ var app = express();
 
 // view engine setup
 
-app.set('views', __dirname+'/browser')
+app.set('views', __dirname+'/browser/bootstrap')
 app.set('view engine', 'html');
 app.engine('html', swig.renderFile);
 
@@ -29,6 +29,7 @@ zheng: add static route to browser
 */ 
 app.use(express.static(path.join(__dirname, 'browser')));
 app.use(express.static(path.join(__dirname, 'node_module')));
+app.use('/sbs', express.static(path.join(__dirname, '/public/sbs/')));
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/'));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/'));
 app.use('/stylesheets', express.static(__dirname + '/public/stylesheets'));

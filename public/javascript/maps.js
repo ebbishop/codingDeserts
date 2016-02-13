@@ -11,7 +11,7 @@ function initialize_gmaps(){
     // styles: styleArr
   };
 
-  var map_canvas = document.getElementById('map-canvas');
+  var map_canvas = document.getElementById('map');
 
 //create the map
   map = new google.maps.Map(map_canvas, mapOptions);
